@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Railway" serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background-color:white;
+    line-height: 1.6;
+    font-size: 16px; 
+    color: black;
+    max-width: 1440px;
+}
+
+header{
+  background-image:  url(/project2/image/bg-pattern-intro-desktop.svg),linear-gradient( hsl(13, 100%, 72%), hsl(353, 100%, 62%)
+  );
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  color: white;
+  padding: 20px 60px;
+  border-end-start-radius: 10%;
+}
+header ion-icon{
+    display: none;
+    cursor: pointer;
+}
+header .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.head h2{
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    
+}
+.head h2 span{
+    font-size: 15px;
+}
+
+header button{
+    padding: 10px;
+    border-radius: 20px;
+}
+header button:nth-child(1){
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+header button:nth-child(2){
+    color: hsl(353, 100%, 62%);
+    border: 2px solid white;
+}
+header .paragragh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.paragragh h2{
+    font-weight: 900;
+    font-size: 40px;
+}
+.paragragh button{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 55px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;    
+}
+.paragragh button:nth-child(1){
+    color: hsl(353, 100%, 62%);
+    background-color: white;
+}
+.paragragh button:nth-child(2){
+    color: white;
+}
+
+.desi{
+    text-align: center;
+    margin-top: 10%;
+    color: hsl(240, 10%, 16%);
+
+}
+.cardDesign {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+   padding: 50px 0px;
+   margin-bottom: 10%;  
+}
+
+.blogr{
+    margin-left: 10%;
+    width: 100%;
+}
+
+.mobile{
+    display: none;
+}
+
+.introducing-img{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.introducing-img img {
+    position:relative;
+    left:140px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(237, 23%, 32%);
+    color: white;
+    gap: 20px;
+    border-top-right-radius: 10%;
+    border-end-start-radius: 10%;
+    background-image: url(/project2/image/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 600px;
+}
+
+.phone .heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+.phone p{
+    margin-right: 40%;
+   font-size: 20px;
+    
+
+}
+
+.free-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0px;
+    margin-bottom: 10%;
+}
+
+.powerful {
+    margin-right: 10%;
+    width: 100%;
+}
+
+.powerful h4{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+.dimg {
+    width: 100%;
+    box-sizing: border-box;
+    verflow: hidden;
+}
+
+.dimg img {
+    position:relative;
+    right:170px;
+}
+
+.mob{
+    display: none;
+}
+
+footer{
+    background-color: hsl(240, 10%, 16%);
+    padding: 40px 20px;
+    border-start-end-radius: 10%;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 10px 100px;
+    
+    
+}
+.footer-container h1{
+    font-size: 2rem;
+    color: white;
+}
+
+h3{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-container a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+  
+ /* =================== Media Queries =================== */
+ @media screen  and (max-width: 700px) {
+    header{
+        width: 100%;
+    }
+    header .head .butt{
+        display: none;
+        position: absolute;
+    }
+    header .head .icon ion-icon{
+        display: block;
+        font-size: 30px;
+    }
+    header .paragragh h2{
+        font-size: 1.5rem;
+        place-items: center;
+    }
+    header .head span {
+        display: none;
+    }
+    header .paragragh .text{
+        text-align: center;
+    }
+    header .paragragh p{
+        text-align: center;
+    }
+
+    .cardDesign{
+        display: flex;
+        flex-direction: column-reverse;   
+    }
+    .cardDesign .blogr p {
+        font-size: 20px;
+        padding: 20px 25px;
+    }
+    .introducing-img{
+       display: none;
+    }
+    .mobile{
+        display: flex;
+       
+    }
+    .blogr{
+        text-align: center;
+    }
+    .phone{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-start-end-radius: 100px;
+        border-end-start-radius: 100px;
+       
+    }
+
+    .phone img {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .phone .hea{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .phone div p{
+        padding-left: 140px;
+    }
+
+    .free-open{
+        display: flex;
+        flex-direction: column;
+    }
+    .free-open .dimg{
+       display: none;
+    }
+
+    .mob{
+        display: flex;
+    }
+    .free-open .powerful {
+        text-align: center;
+    }
+    .free-open .powerful h4{
+        font-size: 2rem;
+    }
+    .free-open .powerful p {
+        margin-left: 2.5rem;
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+ }
