@@ -34,22 +34,31 @@ header .head{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    gap: 30px;
 }
 .head h2{
     color: white;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 35px;
     
 }
-.head h2 span{
-    font-size: 15px;
+ nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
 header button{
     padding: 10px;
     border-radius: 20px;
+    cursor: pointer;
 }
+
 header button:nth-child(1){
     border: none;
     background-color: transparent;
@@ -59,6 +68,7 @@ header button:nth-child(2){
     color: hsl(353, 100%, 62%);
     border: 2px solid white;
 }
+
 header .paragragh{
     display: flex;
     justify-content: center;
@@ -71,11 +81,11 @@ header .paragragh{
 }
 .paragragh button{
     padding: 10px;
-    border: 2px solid white;
     border-radius: 55px;
     background-color: transparent;
     color: white;
-    font-weight: 600;    
+    font-weight: 600; 
+    cursor: pointer;   
 }
 .paragragh button:nth-child(1){
     color: hsl(353, 100%, 62%);
@@ -233,7 +243,7 @@ h3{
         font-size: 1.5rem;
         place-items: center;
     }
-    header .head span {
+    header .head nav {
         display: none;
     }
     header .paragragh .text{
