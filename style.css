@@ -25,7 +25,7 @@ header{
   padding: 20px 60px;
   border-end-start-radius: 10%;
 }
-header ion-icon{
+header .icon{
     display: none;
     cursor: pointer;
 }
@@ -225,7 +225,7 @@ h3{
         display: none;
         position: absolute;
     }
-    header .head .icon ion-icon{
+    header .head .icon {
         display: block;
         font-size: 30px;
     }
@@ -313,5 +313,11 @@ h3{
         flex-direction: column;
         text-align: center;
     }
-
+    .footer-container h3 {
+        font-size: 25px;
+    }
+    .footer-container a {
+        font-size: 20px;
+        font-weight: 30px;
+    }
  }
