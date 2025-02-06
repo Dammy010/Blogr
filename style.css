@@ -290,11 +290,16 @@ h3{
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .phone div p{
-        padding-left: 140px;
+        /* padding-left: 140px; */
+        margin: 0 auto;
+        padding: 60px;
+        font-size: 25px;
+        
+        
     }
 
     .free-open{
